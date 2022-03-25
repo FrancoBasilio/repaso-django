@@ -7,8 +7,8 @@ from django.template import loader
 def index(request):
     return HttpResponse('<h1>Bienvenidos a mi pagina de django</h1>')
 
-def plantilla(request):
-    template = loader.get_template('plantilla.html')
+def inicio(request):
+    template = loader.get_template('inicio.html')
 
     datos = {
         'lista' : ['primero', 'segundo', 'tercero'],
